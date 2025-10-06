@@ -1,0 +1,590 @@
+/* 0. General */
+* {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    flex-direction: column;
+}
+
+/* Page 1 */
+/* 1. Buttons */
+.header-flex-container {
+
+    display: flex;
+    /* border: 1px solid green; */
+    gap: 16px;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 150px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.dark-mode {
+    background-color: black;
+    border: none;
+    color: white;
+
+}
+
+.light-mode {
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* 2. General Cards */
+
+.card-flex-container {
+    display: flex;
+    gap: 10px;
+    height: 600px;
+    width: 100vw;
+    background-color: lightgrey;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    height: 500px;
+    width: 300px;
+    background-color: black;
+}
+
+/* 2a. Card 1 */
+.card-type-1 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+}
+
+/* 2ai. Card 1 upper section */
+.card-type-1 .upper-section {
+    flex-grow: 60;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-type-1 .upper-section .card-upper-subbox {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* 2aii. Card 2 lower section */
+.card-type-1 .lower-section {
+    flex-grow: 40;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 20px 20px 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-type-1 .lower-section .card-special-feature {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-type-1 .lower-section .card-see-more {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* 2b. Card 2 */
+
+.card-type-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* 2bi. Card 2 upper section */
+.card-type-2 .upper-section {
+    width: 100%;
+    flex-grow: 10;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card-type-2 .upper-section .logo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 30px 0 10px;
+}
+
+.card-type-2 .upper-section .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-type-2 .upper-section .subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* 2bii. Card 2 middle section */
+.card-type-2 .middle-section {
+    width: 100%;
+    /* flex-grow: 40; */
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 80px;
+}
+
+.card-type-2 .middle-section .feature {
+    color: grey;
+    font-size: 14px;
+}
+
+/* 2biii. Card 2 lower section */
+.card-type-2 .lower-section {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+.card-type-2 .lower-section .start-now {
+    width: 150px;
+}
+
+/* 3. Card 3 */
+
+.card-type-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.card-type-3 .upper-section {
+    /* border: 1px solid green; */
+    background-color: black;
+    flex-grow: 1;
+}
+
+.card-type-3 .lower-section {
+    height: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-type-3 .lower-section .title {
+    font-size: 1.2rem;
+}
+
+.card-type-3 .lower-section .learn-more {
+    font-size: 0.8rem;
+}
+
+/* Page 2 */
+
+.page-2 {
+    /* border: 1px solid green; */
+    background-color: lightblue;
+    height: 300px;
+    width: 100vw;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.ribbon {
+    height: 50px;
+    width: 100vw;
+}
+
+/* 0. Cross-ribbon style */
+.trade {
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 130px;
+    z-index: 100;
+}
+
+/* 1. Ribbon 1 */
+.ribbon-1 {
+    display: inline-grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+}
+
+.ribbon-1 .trade {
+    grid-column-start: 1;
+    padding: 0 20px;
+}
+
+.ribbon-1 .links {
+    grid-column-start: 2;
+
+}
+
+.ribbon-1 .sign-up {
+    grid-column-start: 3;
+    margin: 0 50px 0 0px;
+    justify-self: right;
+}
+
+/* 2. Ribbon 2 */
+.ribbon-2 {
+    display: inline-grid;
+    grid-template-columns: 50% 30% 20%;
+    align-items: center;
+    /* border: 1px solid blue; */
+
+}
+
+.ribbon-2 .trade {
+    grid-column-start: 1;
+    padding: 0 20px;
+}
+
+.ribbon-2 .links {
+    display: flex;
+    grid-column-start: 2;
+    justify-self: right;    
+    
+}
+
+.ribbon-2 .sign-up {
+    grid-column-start: 3;
+    margin: 0 50px 0 0px;
+    justify-self: right;
+    
+}
+
+/* 3. Ribbon 3 */
+.ribbon-3 {
+    display: inline-grid;
+    grid-template-columns: 10% 40% 30% 20%;
+    align-items: center;
+    /* border: 1px solid blue; */
+
+}
+
+.ribbon-3 .trade {
+    grid-column-start: 1;
+    padding: 0 20px;
+}
+
+.ribbon-3 .links {
+    display: flex;
+    grid-column-start: 2;
+    justify-self: left;    
+    
+}
+
+.ribbon-3 .secondary-links {
+    display: flex;
+    grid-column-start: 3;
+    justify-self: right;    
+    
+}
+
+.ribbon-3 .sign-up {
+    grid-column-start: 4;
+    margin: 0 50px 0 0px;
+    justify-self: right;
+    background-color: black;
+    color: white;
+}
+
+/* 4. Ribbon 4 */
+
+.ribbon-4 {
+    display: inline-grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+}
+
+.ribbon-4 .links {
+    grid-column-start: 1;
+    justify-self: left;
+    padding: 0 20px;
+}
+
+.ribbon-4 .trade {
+    grid-column-start: 2;
+    justify-self: center;
+    padding: 0 20px;
+}
+
+.ribbon-4 .sign-up {
+    grid-column-start: 3;
+    margin: 0 50px 0 0px;
+    justify-self: right;
+}
+
+/* Page 3 */
+
+/* 0. Cross-page 3 style */
+.page-3 {
+    /* border: 1px solid green; */
+    background-color: white;
+    /* height: 300px; */
+    width: 100vw;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    border: 1px solid grey;
+
+}
+
+.page-3 .value-prop-section {
+    background-color: inherit;
+}
+
+.page-3 .value-prop-section .title {
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+.page-3 .value-prop-section .caption {
+    font-size: 1rem;
+}
+
+.carousel {
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+/* 1. Page 3a */
+.page-3a {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 800px;
+    padding: 50px 10px;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+
+.page-3a .value-prop-section {
+    display: flex;
+    grid-column-start: 1;
+    padding: 0 20px;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 300px;
+    justify-content: space-between;
+}
+
+.page-3a .title {
+    padding: 0 0 20px 0;
+    background-color: inherit;
+
+}
+
+.page-3a .caption {
+    background-color: inherit;
+
+}
+
+.page-3a .carousel {
+    grid-column-start: 2;
+    justify-self: center;
+
+}
+
+/* Page 8 */
+
+.page-8 {
+    display: grid;
+    grid-template-columns: 20% 29% 2% 49%;
+    background-color: rgb(252, 251, 251);
+    height: 300px;
+
+}
+
+.page-8 .trade-section {
+    display: flex;
+    background-color: inherit;
+    padding: 50px 70px;
+    align-items: flex-start;
+
+}
+
+.page-8 .trade-section .trade {
+    background-color: inherit;
+    font-size: 2rem;
+}
+
+.page-8 .get-latest-get-started {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 30px 0 0;
+    gap: 20px;
+    background-color: inherit;
+}
+
+.page-8 .get-latest-get-started .latest-blog-post {
+    font-weight: 800;
+    background-color: inherit;
+}
+
+.page-8 .get-latest-get-started .ready-to-get-started {
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: inherit;
+}
+
+.page-8 .get-latest-get-started .caption {
+    font-size: 0.8rem;
+    background-color: inherit;
+}
+
+.page-8 .divider {
+    background-color: black;
+    height: 250px;
+    width: 1px;
+    /* border: 0.5px solid black; */
+    align-self: center;
+}
+
+.page-8 .product-company-legal {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    background-color: inherit;
+    justify-content: space-around;
+    padding: 20px 0 20px 30px;
+}
+
+.page-8 .product-company-legal .product-company-info {
+    display: flex;
+    gap: 80px;
+    background-color: inherit;
+
+}
+
+.page-8 .product-company-legal .product-company-info .products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .products .product-title {
+    font-weight: 800;
+    font-size: 0.9rem;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .products .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .products .product-list .product-company-item {
+    background-color: inherit;
+
+}
+
+
+
+.page-8 .product-company-legal .product-company-info .companies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .companies .company-title {
+    font-weight: 800;
+    font-size: 0.9rem;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .companies .company-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .product-company-info .companies .company-list .product-company-item {
+    background-color: inherit;
+
+}
+
+.page-8 .product-company-legal .legal-info {
+    display: flex;
+    background-color: inherit;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+.page-8 .product-company-legal .legal-info .copyright {
+    background-color: inherit;
+}
+
+.page-8 .product-company-legal .legal-info .privacy-terms {
+    background-color: inherit;
+}
